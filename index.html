@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+          <div class="left-side">
+            <div class="nav-link-wrapper active-nav-link">
+              <a href="index.html">Home</a>
+            </div>
+    
+            <div class="nav-link-wrapper">
+              <a href="about.html">About</a>
+            </div>
+          </div>
+    
+          <div class="right-side">
+            <div class="brand">
+              THE BAKERY ROOM
+            </div>
+          </div>
+        </div>
+
+       <div class="content-wrapper">
+          <div class="portfolio-items-wrapper">
+    
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                   <div class="subtitle">The Bakery Room Loaf</div>
+                </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="subtitle">The Bakery Room Coconut Bread.</div>
+                </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="subtitle">The Bakery Room Sliced Bread</div>
+                </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                  <div class="subtitle">The Bakery Room Bread</div>
+                </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                  <div class="subtitle">The Bakery Room Fruit Bread</div>
+              </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                  <div class="subtitle">The Bakery Room Wedding Cake</div>
+                </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                   <div class="subtitle">The Bakery Room Friut Cake</div>
+                </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                   <div class="subtitle">The Bakery Room Cup Cake</div>
+                </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                  <div class="subtitle">The Bakery Room Cup Cake</div>
+                </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(images/portfolio10.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                  <div class="subtitle">The Bakery Room Doughnuts</div>
+                </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio11.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                  <div class="subtitle">The Bakery Room Meatpie</div>
+                </div>
+            </div>
+    
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(images/portfolio12.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                  <div class="subtitle">The Bakery Room Popcorn</div>
+                </div>
+            </div>
+    
+          </div>
+        </div>
+    </div>
+    
+    
+    
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+      });
+    });
+  
+</script>
+
+</html>
