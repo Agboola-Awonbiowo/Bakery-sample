@@ -105,6 +105,7 @@
     .two-column-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        /* display: block; */
     }
     
     .profile-image-wrapper img {
@@ -230,10 +231,6 @@ body {
     font-weight: 600;
 }
 
-.two-column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 .profile-image-wrapper img {
     width: 100%;
@@ -247,3 +244,10 @@ body {
     color: lightseagreen;
 }
 
+@media (max-width: 600px) { 
+    .two-column-wrapper {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: block;
+}
+}
